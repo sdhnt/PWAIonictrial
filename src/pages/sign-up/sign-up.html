@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="danger">
+   <!--  <ion-title>
+     AdMonkey
+    </ion-title> -->
+
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-item text-center no-lines>
+	<ion-icon name="logo-rss" class="logo" color="light"></ion-icon>
+</ion-item>
+<ion-item text-center no-lines>
+	<h1>AdMonkey</h1>
+	<h6>Bringing Outdoor Media to Billions</h6>
+</ion-item>
+
+<ion-grid style="width: 75%;">
+	<ion-row class="row-style">
+		<ion-icon name="mail" color="danger"></ion-icon>
+		<ion-input type="text" placeholder="your name" [(ngModel)]="name"></ion-input>
+	</ion-row>
+	<ion-row class="row-style">
+		<ion-icon name="mail" color="danger"></ion-icon>
+		<ion-input type="email" placeholder="your email" [(ngModel)]="email"> </ion-input>
+	</ion-row>
+	<ion-row class="row-style">
+		<ion-icon name="key" color="danger"></ion-icon>
+		<ion-input type="password" placeholder="your password" [(ngModel)]="password"></ion-input>
+	</ion-row>
+	<ion-row>
+		<button ion-button block round outline color="light" style="margin-top: 20px;" (click)="signup()">SignUp</button>
+	</ion-row>
+</ion-grid>
+<button ion-button block clear color="light" style="margin-top: 10px;" (click)="goBack()">Already have an account? LOGIN</button>
+</ion-content>
